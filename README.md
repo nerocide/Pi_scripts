@@ -4,7 +4,6 @@ Here are a bunch of helper scripts that help you turn your raspberry pi into a 3
 
 __Even if the set of script is genereic, there is no garanty it will work for your environnement__
 
-
 ## Octoprint
 
 This script help you to install and setup [octoprint](https://octopi.octoprint.org/)
@@ -28,7 +27,7 @@ If for any reasons you have to reinstall(-r) from scratch, your data will be sav
 
 	Slic3r_install_Octoprint.sh
 
-This script dowload and install Slic3r (forced 1.2.9)
+This script dowload and install Slic3r (forced version 1.2.9)
 
 Thanks to Javier Martínez Arrieta
 
@@ -44,10 +43,11 @@ This script helps you to install and setup HA proxy for Octoprint, so that you c
 
 By default it :
 
-* listens on tcp/80 & tcp/443
-* the webcam URL is /webcam/
-* it redirects to localhost:5000
+* listens on **tcp/80** & **tcp/443**
+* the webcam URL is **/webcam/**
+* it redirects to **localhost:5000**
 
 Use as is:
+
 	HAproxyInstall.sh
 
