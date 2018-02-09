@@ -32,7 +32,7 @@ If for any reasons you have to reinstall(**-r**) from scratch, your data will be
 
 This script dowload and install Slic3r (forced version 1.2.9)
 
-Thanks to Javier Martínez Arrieta(@Javierma)
+Thanks to Javier Martínez Arrieta @Javierma .
 
 ## Mjpg-streamer
 
