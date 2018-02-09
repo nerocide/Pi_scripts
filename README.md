@@ -4,6 +4,10 @@ Here are a bunch of helper scripts that help you turn your raspberry pi into a 3
 
 __Even if the set of script is genereic, there is no garanty it will work for your environnement__
 
+This one launch all others, it also provides installation for fail2ban.
+
+	$ ./FullPiInstall.sh
+
 ## Octoprint
 
 This script help you to install and setup [octoprint](https://octopi.octoprint.org/)
@@ -25,7 +29,7 @@ If for any reasons you have to reinstall(-r) from scratch, your data will be sav
 
 [Slic3r](http://slic3r.org/) is the famous opensource STL to gcode slicer.
 
-	Slic3r_install_Octoprint.sh
+	$ ./Slic3r_install_Octoprint.sh
 
 This script dowload and install Slic3r (forced version 1.2.9)
 
@@ -35,7 +39,7 @@ Thanks to Javier Martínez Arrieta
 
 This script help to install [MJPG streamer](https://github.com/jacksonliam/mjpg-streamer) and set it up as a service.
 
-	Mjpg-streamer_install.sh
+	$ ./Mjpg-streamer_install.sh
 
 ## HA proxy
 
@@ -49,5 +53,5 @@ By default it :
 
 Use as is:
 
-	HAproxyInstall.sh
+	$ ./HAproxyInstall.sh
 
