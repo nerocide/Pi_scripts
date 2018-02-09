@@ -2,6 +2,8 @@
 
 Here are a bunch of helper scripts that help you turn your raspberry pi into a 3D printer box control.
 
+__Even if the set of script is genereic, there is no garanty it will work for your environnement__
+
 
 ## Octoprint
 
@@ -38,7 +40,14 @@ This script help to install [MJPG streamer](https://github.com/jacksonliam/mjpg-
 
 ## HA proxy
 
-This script helps you to install and setup HA proxy so that you can easily access all your services from a single URL
+This script helps you to install and setup HA proxy for Octoprint, so that you can easily access all your services from a single URL
 
+By default it :
+
+* listens on tcp/80 & tcp/443
+* the webcam URL is /webcam/
+* it redirects to localhost:5000
+
+Use as is:
 	HAproxyInstall.sh
 
