@@ -65,6 +65,17 @@ install(){
 	./venv/bin/python setup.py install
 	sudo usermod -a -G tty pi
 	sudo usermod -a -G dialout pi
+	# copy service file for service management
+	sudo cp scripts/octoprint.init /etc/init.d/octoprint
+	sudo chmod +x /etc/init.d/octoprint
+	sudo cp scripts/octoprint.default /etc/default/octoprint
+	# change config to fit ours
+	sudo sed -i "s/#BASEDIR/BASEDIR/" /etc/default/octoprint
+	sudo sed -i "s/#DAEMON/DAEMON/" /etc/default/octoprint
+	sudo sed -i "s/#CONFIGFILE/CONFIGFILE/" /etc/default/octoprint
+	# enable octoprint at startup
+	sudo systemctl enable octoprint
+
 }
 # update
 update(){
